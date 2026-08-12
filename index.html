@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <h1 class="nome-empresa">Corporate</h1>
+    <header id="header">
+
             <div class="menu-desktop">
                 <a href="#">Home</a>
                 <a href="#">About Us</a>
@@ -16,62 +17,107 @@
             </div>
 
             <div class="menu-mobile">
-                <img src="/img/menu-hamburguer.png" alt="Menu lateral.">
+                <img id="img-menu" src="/img/Icon-menu.png" alt="Menu lateral.">
                 <h1 class="nome-empresa">Corporate</h1>
-                <button>Contact</button>
-            </div>     
+            </div> 
+
+            <a class="contato" href="#">Contact</a>   
     </header>
 
     <main>
         <section class="tela-principal">
           <h2 class="slogan">
             Clareza Institucional. <br>
-            Excelência Corporativa. </h2>
+            Excelência <br>
+            Corporativa. </h2>
 
           <p class="texto-slogan">
-            Fornecemos estabilidade profissional e confiança inabalável para nossos parceiros e clientes em todo o mundo. Descubra uma nova era de gestão estratégica.</p>
+            Fornecemos estabilidade profissional e confiança inabalável para nossos parceiros e clientes em todo o mundo. <br>
+            Descubra uma nova era de gestão estratégica.</p>
 
-          <button id="botao-cta">Inicie Agora</button>
-          <button id="botao-saiba-mais">Saiba Mais</button>
+          <a id="botao-cta" href="#">Inicie Agora</a>
+          <a id="botao-saiba-mais" href="#">Saiba Mais</a>
         </section>
 
         <section class="sobre-nos">
+            <h2 class="titulo-sobre-nos">Sobre Nós</h2>
             <p class="texto-sobre-nos">
                 Com décadas de experiência no mercado corporativo, estabelecemos um padrão de excelência baseado em transparência, eficiência e inovação controlada. <br>
                 Nossa missão é simplificar a complexidade para que você possa focar no que realmente importa: o crescimento sustentável da sua organização.</p>
 
-            <img src="/img/Ambiente corporativo moderno.jpg" alt="Ambiente corporativo.">
+            <img class="img-escritorio" src="/img/Ambiente corporativo moderno.jpg" alt="Ambiente corporativo.">
         </section>
 
-        <section class="serviços">
-            <div class="card-gestao">
+        <section class="servicos">
+
+            <h2 class="nossos-servicos">Nossos Serviços</h2>
+            <p class="descricao-servicos">Soluções estratégicas desenhadas para alta performance.</p>
+            <div class="card">
                 <img src="/img/Icon-predio.png" alt="Ícone de prédios.">
-                <h2>Gestão</h2>
-                <p>Otimização de processos e reestruturação organizacional para máxima eficiência.</p>
+                <h2 class="titulo-servico">Gestão</h2>
+                <p class="texto-servico">Otimização de processos e reestruturação organizacional para máxima eficiência.</p>
             </div>
 
-            <div class="card-analise-dados">
+            <div class="card">
                 <img src="img/Icon-dados.png" alt="Ícone de retas de gráfico.">
-                <h2>Análise de Dados</h2>
-                <p>Inteligência de mercado baseada em métricas precisas e previsibilidade</p>
+                <h2 class="titulo-servico">Análise de Dados</h2>
+                <p class="texto-servico">Inteligência de mercado baseada em métricas precisas e previsibilidade</p>
             </div>
 
-            <div class="card-consultoria">
+            <div class="card">
                 <img src="img/Icon-martelo.png" alt="Ícone de martelo.">
-                <h2>Consultoria Legal</h2>
-                <p>Assessoria jurídica robusta para garantir conformidade e mitigar riscos.</p>
+                <h2 class="titulo-servico">Consultoria Legal</h2>
+                <p class="texto-servico">Assessoria jurídica robusta para garantir conformidade e mitigar riscos.</p>
             </div>
 
-            <div class="card-seguranca">
+            <div class="card">
                 <img src="/img/Icon-escudo.png" alt="Ícone de escudo.">
-                <h2>Segurança da Informação</h2>
-                <p>Proteção de ativos digitais com os mais altos padrões institucionais.</p>
+                <h2 class="titulo-servico">Segurança da Informação</h2>
+                <p class="texto-servico">Proteção de ativos digitais com os mais altos padrões institucionais.</p>
             </div>
         </section>
+
+        <section class="fundo-form">
+            <div class="formulario">
+                <h2 class="titulo-form">Entre em contato</h2>
+                <p class="descricao-form">Agende uma consulta com nossos especialistas.</p>
+
+                <form action="#" method="get">
+                    
+                    <div class="form-nome">
+                        <label for="nome completo">Nome completo</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+
+                    <div class="form-email">
+                        <label for="email">E-mail profissional</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <div class="form-mensagem">
+                        <label for="mensagem">Mensagem</label>
+                        <input class="campo-mensagem" type="text" id="mensagem" name="mensagem">
+                    </div>
+
+                    <a href="#" class="enviar-solicitacao">Enviar Solicitação</a>
+                    
+                </form>
+            </div>
+        </section>  
     </main>
     
     <footer>
-        
+        <div class="rodape">
+            <p class="rodape-nome-empresa">Corporate Modern</p>
+            <p>&copy; Corporate Modernism Inc. All rights reserved.</p>
+        </div>
+
+        <div class="rodape-funcoes">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookie Policy</p>
+        </div>
     </footer>
+
 </body>
 </html>
